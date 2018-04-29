@@ -1,5 +1,6 @@
-import com.adamsiot.SystemPasswordEncoderListener
+import com.adamsiot.SecUserPasswordEncoderListener
+
 // Place your Spring DSL code here
 beans = {
-    systemPasswordEncoderListener(SystemPasswordEncoderListener, ref('hibernateDatastore'))
+    secUserPasswordEncoderListener(SecUserPasswordEncoderListener, ref('hibernateDatastore'))
 }

@@ -1,9 +1,10 @@
+grails.plugin.springsecurity.successHandler.alwaysUseDefault = true
+grails.plugin.springsecurity.successHandler.defaultTargetUrl = '/catfeeder'
 
 // Added by the Spring Security Core plugin:
-grails.plugin.springsecurity.useDigestAuth = true
-grails.plugin.springsecurity.userLookup.userDomainClassName = 'com.adamsiot.System'
-grails.plugin.springsecurity.userLookup.authorityJoinClassName = 'com.adamsiot.SystemAdmin'
-grails.plugin.springsecurity.authority.className = 'com.adamsiot.Admin'
+grails.plugin.springsecurity.userLookup.userDomainClassName = 'com.adamsiot.SecUser'
+grails.plugin.springsecurity.userLookup.authorityJoinClassName = 'com.adamsiot.SecUserSecRole'
+grails.plugin.springsecurity.authority.className = 'com.adamsiot.SecRole'
 grails.plugin.springsecurity.controllerAnnotations.staticRules = [
 	[pattern: '/',               access: ['permitAll']],
 	[pattern: '/error',          access: ['permitAll']],
