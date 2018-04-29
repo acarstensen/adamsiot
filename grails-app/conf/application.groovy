@@ -1,5 +1,4 @@
 
-
 // Added by the Spring Security Core plugin:
 grails.plugin.springsecurity.useDigestAuth = true
 grails.plugin.springsecurity.userLookup.userDomainClassName = 'com.adamsiot.System'
@@ -26,4 +25,3 @@ grails.plugin.springsecurity.filterChain.chainMap = [
 	[pattern: '/**/favicon.ico', filters: 'none'],
 	[pattern: '/**',             filters: 'JOINED_FILTERS']
 ]
-
